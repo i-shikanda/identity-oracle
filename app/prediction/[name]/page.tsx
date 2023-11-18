@@ -29,12 +29,12 @@ export default async function Prediction({ params }: Params) {
   ]);
 
   return (
-    <div>
-      <div>
-        <div>Personal Info</div>
-        <div>Age: {age?.age}</div>
-        <div>Gender: {gender?.gender}</div>
-        <div>Country: {country?.country[0]?.country_id}</div>
+    <div className="items-centerw-full h-full">
+      <div className="text-left">
+        <div className="font-bold text-2xl">Personal Info</div>
+        <div className="text-xl">Age: {age?.age}</div>
+        <div className="text-xl">Gender: {gender?.gender}</div>
+        <div className="text-xl">Country: {country?.country[0]?.country_id}</div>
       </div>
     </div>
   );
